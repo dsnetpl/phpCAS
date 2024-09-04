@@ -338,7 +338,7 @@ class phpCAS
      * @param bool                     $changeSessionID Allow phpCAS to change the session_id
      *                                                  (Single Sign Out/handleLogoutRequests
      *                                                  is based on that change)
-     * @param \SessionHandlerInterface $sessionHandler  the session handler
+     * @param \SessionHandlerInterface|null $sessionHandler  the session handler
      *
      * @return void a newly created CAS_Client object
      * @note Only one of the phpCAS::client() and phpCAS::proxy functions should be
@@ -393,7 +393,7 @@ class phpCAS
      * @param bool                     $changeSessionID Allow phpCAS to change the session_id
      *                                                  (Single Sign Out/handleLogoutRequests
      *                                                  is based on that change)
-     * @param \SessionHandlerInterface $sessionHandler  the session handler
+     * @param \SessionHandlerInterface|null $sessionHandler  the session handler
      *
      * @return void a newly created CAS_Client object
      * @note Only one of the phpCAS::client() and phpCAS::proxy functions should be
