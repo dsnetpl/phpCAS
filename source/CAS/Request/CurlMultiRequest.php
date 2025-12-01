@@ -145,6 +145,11 @@ implements CAS_Request_MultiRequestInterface
             {
               curl_close($handles[$i]);
             }
+            else
+            {
+                // unreference it => it will be closed
+                unset($handles[$i]);
+            }
         }
 
         curl_multi_close($multiHandle);
