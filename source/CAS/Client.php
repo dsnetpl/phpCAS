@@ -3166,7 +3166,7 @@ class CAS_Client
                 $proxiedService->setCasClient($this);
             }
             return $proxiedService;
-          case PHPCAS_PROXIED_SERVICE_IMAP:
+        case PHPCAS_PROXIED_SERVICE_IMAP:
             $proxiedService = new CAS_ProxiedService_Imap($this->_getUser());
             if ($proxiedService instanceof CAS_ProxiedService_Testable) {
                 $proxiedService->setCasClient($this);
