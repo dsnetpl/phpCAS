@@ -1,5 +1,8 @@
 {
-	"name" : "apereo/phpcas",
+	"name" : "dsnetpl/phpcas",
+	"replace": {
+		"apereo/phpcas": "^1.6"
+	},
 	"description" : "Provides a simple API for authenticating users against a CAS server",
 	"keywords" : [
 		"cas",
